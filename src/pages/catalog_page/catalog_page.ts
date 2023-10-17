@@ -243,7 +243,7 @@ class CatalogPage {
       pagination,
     );
 
-    const indexCategories: number = 9;
+    const indexCategories: number = 3;
     const offset: number = 0;
     localStorage.setItem("indexCategories", `${indexCategories}`);
     const cardProducts: ProductProjection[] = (
@@ -366,7 +366,7 @@ class CatalogPage {
       const offset = 0;
       const currentElement: HTMLElement = event.target as HTMLElement;
       if (currentElement.textContent === "Catalog") {
-        const indexCategories: number = 9;
+        const indexCategories: number = 3;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         productWrapper.innerHTML = "";
         optionDrinksReset.selected = true;
@@ -383,7 +383,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardProductsAll, productWrapper);
       }
       if (currentElement.textContent === "/ Sushi") {
-        const indexCategories: number = 0;
+        const indexCategories: number = 1;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         productWrapper.innerHTML = "";
         optionSushi.selected = true;
@@ -401,7 +401,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardCategories, productWrapper);
       }
       if (currentElement.textContent === "/ Desserts") {
-        const indexCategories: number = 1;
+        const indexCategories: number = 4;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         productWrapper.innerHTML = "";
         optionDesserts.selected = true;
@@ -419,7 +419,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardCategories, productWrapper);
       }
       if (currentElement.textContent === "/ Drinks") {
-        const indexCategories: number = 2;
+        const indexCategories: number = 0;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         productWrapper.innerHTML = "";
         optionDrinks.selected = true;
@@ -630,7 +630,7 @@ class CatalogPage {
       const categoriesSushiItem =
         sushiSelectElement.options[sushiSelectElement.selectedIndex];
       if (categoriesSushiItem.text === "") {
-        const indexCategories: number = 9;
+        const indexCategories: number = 3;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "";
         navigationSubcategories.textContent = "";
@@ -643,7 +643,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardProductsFilterAll, productWrapper);
       }
       if (categoriesSushiItem.text === "Sushi") {
-        const indexCategories: number = 0;
+        const indexCategories: number = 1;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "/ Sushi";
         navigationSubcategories.textContent = "";
@@ -660,7 +660,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardCategories, productWrapper);
       }
       if (categoriesSushiItem.text === " > Roll") {
-        const indexCategories: number = 8;
+        const indexCategories: number = 6;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "/ Sushi";
         navigationSubcategories.textContent = "/ Roll";
@@ -677,7 +677,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardCategories, productWrapper);
       }
       if (categoriesSushiItem.text === " > Set") {
-        const indexCategories: number = 3;
+        const indexCategories: number = 7;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "/ Sushi";
         navigationSubcategories.textContent = "/ Set";
@@ -706,7 +706,7 @@ class CatalogPage {
       const categoriesDessertsItem =
         dessertSelectElement.options[dessertSelectElement.selectedIndex];
       if (categoriesDessertsItem.text === "") {
-        const indexCategories: number = 9;
+        const indexCategories: number = 3;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "";
         navigationSubcategories.textContent = "";
@@ -719,7 +719,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardProductsFilterAll, productWrapper);
       }
       if (categoriesDessertsItem.text === "Desserts") {
-        const indexCategories: number = 1;
+        const indexCategories: number = 4;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "/ Desserts";
         navigationSubcategories.textContent = "";
@@ -736,7 +736,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardCategories, productWrapper);
       }
       if (categoriesDessertsItem.text === " > Healthy food") {
-        const indexCategories: number = 6;
+        const indexCategories: number = 8;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "/ Desserts";
         navigationSubcategories.textContent = "/ Healthy food";
@@ -753,7 +753,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardCategories, productWrapper);
       }
       if (categoriesDessertsItem.text === " > Usual dessert") {
-        const indexCategories: number = 7;
+        const indexCategories: number = 5;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "/ Desserts";
         navigationSubcategories.textContent = "/ Usual dessert";
@@ -782,7 +782,7 @@ class CatalogPage {
       const categoriesDrinksItem =
         drinksSelectElement.options[drinksSelectElement.selectedIndex];
       if (categoriesDrinksItem.text === "") {
-        const indexCategories: number = 9;
+        const indexCategories: number = 3;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "";
         navigationSubcategories.textContent = "";
@@ -795,7 +795,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardProductsFilterAll, productWrapper);
       }
       if (categoriesDrinksItem.text === "Drinks") {
-        const indexCategories: number = 2;
+        const indexCategories: number = 0;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "/ Drinks";
         navigationSubcategories.textContent = "";
@@ -812,7 +812,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardCategories, productWrapper);
       }
       if (categoriesDrinksItem.text === " > Soft drinks") {
-        const indexCategories: number = 4;
+        const indexCategories: number = 2;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "/ Drinks";
         navigationSubcategories.textContent = "/ Soft drinks";
@@ -829,7 +829,7 @@ class CatalogPage {
         this.addCardProductsToPage(cardCategories, productWrapper);
       }
       if (categoriesDrinksItem.text === " > Hot drinks") {
-        const indexCategories: number = 5;
+        const indexCategories: number = 9;
         localStorage.setItem("indexCategories", `${indexCategories}`);
         navigationCategories.textContent = "/ Drinks";
         navigationSubcategories.textContent = "/ Hot drinks";

@@ -5,11 +5,11 @@ import {
 } from "@commercetools/sdk-client-v2";
 import { createApiBuilderFromCtpClient } from "@commercetools/platform-sdk";
 
-const projectKey: string = "ecommerce-trueorfalse";
-const clientId: string = "Vz7HRKxOUN3XQ9Oa7ypNidqN";
-const clientSecret: string = "imDLvOyvC0oZ364qW_bjeQgnAugLRqmc";
+const projectKey: string = "11031986";
+const clientId: string = "ki6v1kQbQfNG9Tci_ukXYaIz";
+const clientSecret: string = "yzVtPEOAH7dEKRh9Q8_3qWjCTHXo4jv0";
 const scopes: string[] = [
-  "manage_my_business_units:ecommerce-trueorfalse view_published_products:ecommerce-trueorfalse manage_my_profile:ecommerce-trueorfalse manage_my_shopping_lists:ecommerce-trueorfalse manage_my_payments:ecommerce-trueorfalse manage_products:ecommerce-trueorfalse manage_my_orders:ecommerce-trueorfalse view_categories:ecommerce-trueorfalse manage_customers:ecommerce-trueorfalse create_anonymous_token:ecommerce-trueorfalse manage_my_quotes:ecommerce-trueorfalse manage_my_quote_requests:ecommerce-trueorfalse manage_orders:ecommerce-trueorfalse",
+  "create_anonymous_token:11031986 manage_my_orders:11031986 manage_my_quote_requests:11031986 view_categories:11031986 manage_my_profile:11031986 manage_products:11031986 manage_customers:11031986 manage_my_quotes:11031986 manage_my_business_units:11031986 manage_orders:11031986 manage_my_shopping_lists:11031986 view_published_products:11031986 manage_my_payments:11031986",
 ];
 const httpMiddlewareOptions: HttpMiddlewareOptions = {
   host: "https://api.europe-west1.gcp.commercetools.com",
